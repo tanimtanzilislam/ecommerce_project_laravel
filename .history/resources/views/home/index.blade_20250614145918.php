@@ -38,7 +38,7 @@
    
 
   <!-- info section -->
-@include('home.footer');
+@include()
  
 </body>
 
