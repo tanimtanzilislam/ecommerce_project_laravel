@@ -40,13 +40,6 @@
                 Login
               </span>
             </a>
-
-            <a href="{{url('/register')}}">
-              <i class="fa fa-vcard" aria-hidden="true"></i>
-              <span>
-                Register
-              </span>
-            </a>
             <a href="">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </a>
