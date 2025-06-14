@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-route::get('/', [HomeController::class,'home']
+route::get('/', [HomeController::class,'home'];
 );
 
 Route::get('/dashboard', function () {

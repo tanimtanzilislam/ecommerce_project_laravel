@@ -3,8 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-route::get('/', [HomeController::class,'home']
-);
+Route::get('/', function () {
+    return view('home.index');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
