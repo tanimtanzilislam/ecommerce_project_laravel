@@ -27,17 +27,7 @@
                
              
             <!-- Log out               -->
-            <div class="list-inline-item logout">    
-
-            <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-
-                   <input type="submit" name="Logout" value="Logout">
-
-                </form>
-                
-        
-        </div>
+            <div class="list-inline-item logout">               </div>
           </div>
         </div>
       </nav>
