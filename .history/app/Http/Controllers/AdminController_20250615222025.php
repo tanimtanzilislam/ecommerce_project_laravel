@@ -19,7 +19,6 @@ class AdminController extends Controller
             $category= new Category;
             $category->category_name =$request->category;
             $category->save();
-            return redirect()->back();
 
         }
 }
