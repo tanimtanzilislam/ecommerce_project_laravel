@@ -13,7 +13,7 @@
 
 
 
-                <li><a href="{{url('view_category')}}"> <i class="icon-grid"></i>Category </a>
+                <li><a href="{{url('view_c"> <i class="icon-grid"></i>Category </a>
               
               </li>
              

@@ -3,7 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AdminController;
 route::get('/', [HomeController::class,'home']
 );
 
@@ -19,8 +18,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-
+route::get('admin/dashboard',[HomeController::class,'index']);
 route::get('admin/dashboard',[HomeController::class,'index'])->middleware(['auth','admin']);
-
-route::get('view_category',[AdminController::class,'index'])->middleware(['auth','admin']);
 
