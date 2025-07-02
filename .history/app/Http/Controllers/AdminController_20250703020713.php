@@ -20,17 +20,9 @@ class AdminController extends Controller
             $category= new Category;
             $category->category_name =$request->category;
             $category->save();
-            toastr()->timeout(10000)->closeButton()->addsuccess('Category Added Successfully');
             return redirect()->back();
 
         }
 
-        public function  delete_category($id){
-            $data = Category:: find($id);
-
-            $data->delete();
-
-            toastr()->timeout(10000)->closeButton()->addsuccess('Category deleted Successfully');
-            return redirect()->back();
-        }
+        public function  delete_category()
 }

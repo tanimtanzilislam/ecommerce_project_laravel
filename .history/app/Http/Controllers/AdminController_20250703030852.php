@@ -25,12 +25,27 @@ class AdminController extends Controller
 
         }
 
-        public function  delete_category($id){
-            $data = Category:: find($id);
+        public function delete_category($id)
+{
+    $data = Category::find($id);
 
-            $data->delete();
+    if (!$data) {
+        // If no category is found with the given ID
+        Toastr::error('Category not found', 'Error', [
+            "closeButton" => true,
+            "timeOut" => "10000"
+        ]);
+        return redirect()->back();
+    }
 
-            toastr()->timeout(10000)->closeButton()->addsuccess('Category deleted Successfully');
-            return redirect()->back();
-        }
+    $data->delete();
+
+    Toastr::success('Category Deleted Successfully', 'Success', [
+        "closeButton" => true,
+        "timeOut" => "10000"
+    ]);
+
+    return redirect()->back();
+}
+
 }

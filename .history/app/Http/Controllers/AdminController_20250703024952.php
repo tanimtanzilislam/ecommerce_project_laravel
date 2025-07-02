@@ -30,7 +30,7 @@ class AdminController extends Controller
 
             $data->delete();
 
-            toastr()->timeout(10000)->closeButton()->addsuccess('Category deleted Successfully');
+            toastr()->timeout(10000)->closeButton()->addsuccess('Category  Successfully');
             return redirect()->back();
         }
 }

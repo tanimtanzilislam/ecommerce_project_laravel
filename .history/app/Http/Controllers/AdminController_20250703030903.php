@@ -28,7 +28,7 @@ class AdminController extends Controller
         public function  delete_category($id){
             $data = Category:: find($id);
 
-            $data->delete();
+            $data->delete($id);
 
             toastr()->timeout(10000)->closeButton()->addsuccess('Category deleted Successfully');
             return redirect()->back();
