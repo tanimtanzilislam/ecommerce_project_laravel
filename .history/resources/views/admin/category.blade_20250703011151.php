@@ -23,7 +23,6 @@
       margin:auto;
       border:2px solid yellowgreen;
       margin-top:50px;
-      width:600px;
     }
     th{
       background-color:skyblue;
@@ -73,10 +72,8 @@
    
 
   <tr>
-    <td>{{$data->category_name}} </td>
+    <td>Sports </td>
   </tr>
-
-   @endforeach
   
   </table>
             </div>

@@ -23,7 +23,7 @@
       margin:auto;
       border:2px solid yellowgreen;
       margin-top:50px;
-      width:600px;
+      width:600
     }
     th{
       background-color:skyblue;

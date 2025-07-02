@@ -10,8 +10,8 @@ class AdminController extends Controller
 {
     public function view_category()
         {
-            $data=Category::all();
-            return view('admin.category',compact('data'));
+            $data=Category
+            return view('admin.category');
         }
 
 

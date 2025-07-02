@@ -23,7 +23,6 @@
       margin:auto;
       border:2px solid yellowgreen;
       margin-top:50px;
-      width:600px;
     }
     th{
       background-color:skyblue;
@@ -33,12 +32,7 @@
       color:white;
 
     }
-    td{
-      color:white;
-      padding:10px;
-      border: 1px solid skyblue;
-
-    }
+    td
   </style>
 
   <div class="d-flex align-items-stretch">
@@ -69,15 +63,9 @@
           <tr>
             <th>Category</th>
   </tr>
- @foreach ( $data as $data )
-   
-
   <tr>
-    <td>{{$data->category_name}} </td>
+    <td>Sports </td>
   </tr>
-
-   @endforeach
-  
   </table>
             </div>
       </div>
